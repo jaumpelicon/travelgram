@@ -1,5 +1,6 @@
 :root {
   font-family: "Poppins", sans-serif;
+  color: #6c6c6c;
 }
 
 header {
@@ -8,20 +9,67 @@ header {
   margin: 0px 32px;
 }
 
+#about {
+  margin: 0 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 #actions {
   display: flex;
   gap: 1rem;
   justify-content: baseline;
 }
 
+#options-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#options {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: center;
+  align-content: center;
+  margin-right: 120px;
+}
+
+#description {
+  display: flex;
+  flex-direction: column;
+  width: 420px;
+  margin-left: 32px;
+}
+
 .actions-text-style {
-  color: #6c6c6c;
   line-height: 150%;
+}
+
+.options-text-style {
+  line-height: 150%;
+}
+.description-text-style {
+  line-height: 170%;
 }
 
 .profile {
   --picture-size: 40px;
-  border-radius: 32px;
+  border-radius: 200px;
   height: var(--picture-size);
   width: var(--picture-size);
+}
+
+.icon {
+  height: 24px;
+  width: 24px;
+}
+
+h1 {
+  color: #313131;
+  line-height: 125%;
+  font-size: 32px;
+  font-weight: bold;
 }
