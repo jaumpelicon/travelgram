@@ -1,0 +1,27 @@
+:root {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 32px;
+}
+
+#actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: baseline;
+}
+
+.actions-text-style {
+  color: #6c6c6c;
+  line-height: 150%;
+}
+
+.profile {
+  --picture-size: 40px;
+  border-radius: 32px;
+  height: var(--picture-size);
+  width: var(--picture-size);
+}
