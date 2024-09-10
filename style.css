@@ -8,12 +8,22 @@ header {
   justify-content: space-between;
   margin: 0px 32px;
 }
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 32px;
+}
 
 #about {
   margin: 0 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+#terms {
+  display: flex;
+  gap: 16px;
 }
 
 #actions {
@@ -42,6 +52,27 @@ header {
   flex-direction: column;
   width: 420px;
   margin-left: 32px;
+}
+
+#grid-images {
+  display: grid;
+  grid-template-columns: repeat(4, 0.1fr);
+  justify-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin: 24px 32px;
+}
+
+@media (max-width: 1024px) {
+  #grid-images {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  #grid-images {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .actions-text-style {
